@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+    <style>
+        * {
+            text-transform: capitalize;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-Cserif;
+            font-size: 25px;
+            color: red;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+        }
+
+        .video {
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid rgb(11, 11, 11);
+        }
+
+        video {
+            height: 500px;
+            width: 100%;
+            background-color: black;
+            border: 2px solid rgb(52, 51, 51);
+        }
+
+        .audio {
+            height: auto;
+            margin: 30px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        audio {
+            margin: 40px 20px;
+            border: 3px solid rgb(48, 5, 238);
+            border-radius: 225px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section class="video">
+            <article>
+                <li>video file using video tag</li>
+            </article> <br>
+            <p><video src="./video.mp4" controls></video></p>
+        </section>
+        <section class="audio">
+            <article>
+                <li>Audio file using audio tag</li>
+            </article>
+            <audio src="./audio.mpeg" controls></audio>
+        </section>
+        <!-- <section class="canvas">
+            <article>
+                <li> shape using canvas tag in html5</li>
+            </article> <br>
+        
+        </section> -->
+        <section class="svg">
+            <article>
+                <li> shape using svg tag in html5</li>
+            </article> <br>
+            <p>
+                <svg width="30%" height="250">
+                    <rect x="10" y="10" width="45%" height="190" stroke="black" stroke-width="2" fill="orange">
+                    </rect>
+                </svg>
+            </p>
+            <p>
+                <svg width="30%" height="550">
+                    <rect x="10" y="10" width="25%" height="190" stroke="black" stroke-width="2" fill="rgb(217, 33, 5)">
+                    </rect>
+                </svg>
+            <p></p>
+        </section>
+    </header>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
