@@ -1,5 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: bisque;
+        }
+        header,footer{
+            background-color: rgba(128, 128, 128, 0.572);
+            height:10vh;
+            text-align: center;
+            width:100%;
+            margin:10px auto;
+            font-size: 30px;
+            padding-top: 15px;
+            text-transform: capitalize;
+            border: 4px solid black;
+        }
+        footer{
+                background-color: rgba(6, 6, 6, 0.828);
+                color: white;
+        }
+        .video , .audio{
+            height: auto;
+            width: 90%;
+            border: 10px inset black;
+            margin:30px auto;
+            text-align: center;
+            font-size: 25px;
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            color: wheat;
+            background-color: black;
+            padding: 25px;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            text-decoration-color: red;
+        }
+        video,audio{
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            width: 60%;
+            border-bottom: 2px solid white;
+        }
+        audio{
+               width: 25%; 
+               border-radius:50px;
+               background-color: antiquewhite;
+                margin:30px auto;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <header> This is header</header>
+        <section class="video">
+            <article>
+                video file using video tag
+            </article> <br>
+          <video src="./gojo video.mp4" controls></video>
+        </section>
+        <section class="audio">
+            <article>
+                Audio file using audio tag
+            </article>
+            <audio src="./audio.mpeg" controls></audio>
+        </section>
+        <!-- <section class="canvas">
+            <article>
+                 shape using canvas tag in html5
+            </article> <br>
+         -->
+        </section>
+        <section class="svg">
+            <article>
+                <li> shape using svg tag in html5</li>
+            </article> <br>
+            <p>
+                <svg width="30%" height="250" class="svg">
+                    <rect x="10" y="10" width="45%" height="190" stroke="black" stroke-width="2" fill="orange">
+                    </rect>
+                </svg>
+            </p>
+            <p>
+                <svg width="30%" height="550">
+                    <rect x="10" y="10" width="25%" height="190" stroke="black" stroke-width="2" fill="rgb(217, 33, 5)">
+                    </rect>
+                </svg>
+            <p></p>
+        </section>
+  
+    <footer>
+        this is footer
+    </footer>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -15,27 +118,23 @@
             text-decoration: underline;
             text-underline-offset: 10px;
         }
-
         .video {
-            margin: 30px;
+            margin: auto;
             padding: 20px;
             border: 2px solid rgb(11, 11, 11);
         }
-
         video {
             height: 500px;
             width: 100%;
             background-color: black;
             border: 2px solid rgb(52, 51, 51);
         }
-
         .audio {
             height: auto;
             margin: 30px;
             padding: 20px;
             border: 2px solid black;
         }
-
         audio {
             margin: 40px 20px;
             border: 3px solid rgb(48, 5, 238);
@@ -58,12 +157,12 @@
             </article>
             <audio src="./audio.mpeg" controls></audio>
         </section>
-        <!-- <section class="canvas">
+        <section class="canvas">
             <article>
                 <li> shape using canvas tag in html5</li>
             </article> <br>
         
-        </section> -->
+        </section>
         <section class="svg">
             <article>
                 <li> shape using svg tag in html5</li>
@@ -87,4 +186,4 @@
     </footer>
 </body>
 
-</html>
+</html> -->
