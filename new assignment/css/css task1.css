@@ -1,0 +1,79 @@
+ *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+        }
+        body{
+            /* background-image: url(./images/task4.jpg); */
+            background-color:#5B51D8;
+            background: url(https://img.freepik.com/premium-photo/hands-casting-shadow-puppet-play_1258-276141.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+        form{
+            font-size: 1.4rem ;
+            margin:5vh auto;
+            border: 2px solid black;
+            width: 90%;
+            max-width: 500px;
+            padding: 2rem;
+            border-radius:15px;
+            text-shadow: 1px 0 0 black;
+            background-color: transparent;
+            backdrop-filter: blur(15px);
+            box-shadow: 1px 1px 5px black;
+        }
+        input,button{
+            text-transform: none;
+            margin:1rem 0;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            box-shadow: 1px 0 5px black;
+        }
+        input:hover{
+            background-color: #525252;
+            font-weight: bold;
+            color: white;
+            border-bottom: 2px solid black;
+        }
+        input:focus{
+            background-color: black;
+            color: white;
+        }
+        button{
+            
+            background-color:rgb(3, 164, 200);
+            border:2px solid;
+            border-radius: 20px;
+            font-size:1.5rem;
+            cursor: pointer;
+            box-shadow: 1px 1px 5px black;
+            transition: 0.5s ease linear;
+        }
+        button:hover{
+            transform: scale(1.02);
+            border: 2px solid white;            
+            background-color: black;
+            color: white;
+        }
+        .box{
+            text-align: center;
+            line-height: 2.5rem;
+            word-spacing:0.3vw;
+        }
+        div i{
+            margin: 1rem;
+            cursor: pointer;
+            text-shadow: 2px 0 0 rgba(5, 5, 5, 0.72);
+        }
+        #i1{
+            background-image: linear-gradient(	#405DE6,#5B51D8,#833AB4,#C13584,#E1306C,#FD1D1D,	#F56040,#F77737,#FCAF45,#FFDC80);
+           background-clip: text;
+           color: transparent;
+        }
+     

@@ -1,0 +1,134 @@
+<!-- Task: Create a product catalog table that includes the following columns:
+• Product Name
+• Product Image (use placeholder image URLs)
+• Price
+• Description
+• Availability (in stock, out ofstock)
+Additional Requirements:
+• Use theadfor the table header.
+• Add a border and some basic styling using inline CSS.
+• Use colspanor rowspanto merge cells where applicable. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <table border="2" width="95%" cellspacing="2" cellpadding="4" align="center"
+        style="text-align: center; font-size: 1.5vw; text-transform: capitalize;">
+        <thead>
+            <tr bgcolor="gray">
+                <th>Product Name</th>
+                <th width="30%">Product image</th>
+                <th>Product description</th>
+                <th>Availability</th>
+                <th width="15%">Product price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>product 1</td>
+                <td><img src="./images/product1.jpg"
+                        alt="product image" width="90%"></td>
+                <td>Some description</td>
+                <td>in stock</td>
+                <td>$2050/-</td>
+            </tr>
+            <tr>
+                <td rowspan="2">product 2 </td>
+                <td rowspan="2"><img src="./images/product2.jpg"
+                        alt="product image" width="90%"></td>
+                <td rowspan="2">some description</td>
+                <!-- <td>discount amount 5%</td> -->
+                <td rowspan="2">in stock</td>
+                <td>$2500</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">discount amount 5%</td>
+            </tr>
+
+            <tr>
+                <td>product 3</td>
+                <td><img src="./images/product3.jpg" width="90%"></td>
+                <td>Some description</td>
+                <td>in stock</td>
+                <td>$1250/-</td>
+            </tr>
+            
+            <tr>
+                <td>product 4</td>
+                <td><img src="./images/product4.jpg"
+                        alt="product image" width="90%"></td>
+                <td>Some description</td>
+                <td colspan="2">
+                    <font color="red" size="25px"><b>not availaible!</b></font>
+                </td>
+            </tr>
+            <tr>
+                <td>product 5</td>
+                <td><img src="./images/product5.jpg"
+                        alt="product image" width="90%"></td>
+                <td>
+                    <table bgcolor="lightgreen" border="2" cellspacing="2" cellpadding="3" width="100%">
+                        <thead>
+                            <tr>
+                                <th>about</th>
+                                <th>quality</th>
+                                <th>rating<i class="fa fa-star-half-o" aria-hidden="true"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>lorem</td>
+                                <td>6</td>
+                                <td>4.6<i class="fa fa-star-half-o" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>lorem</td>
+                                <td>2</td>
+                                <td>4.6<i class="fa fa-star-half-o" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>lorem</td>
+                                <td>6</td>
+                                <td>5<i class="fa fa-star-half-o" aria-hidden="true"></i></td>
+                            </tr>
+                            <tr>
+                                <td>lorem</td>
+                                <td>1</td>
+                                <td>3.6<i class="fa fa-star-half-o" aria-hidden="true"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>in stock</td>
+                <td>$2550/-</td>
+            </tr>
+            <tr>
+                <td>product 6</td>
+                <td><img src="./images/product6.jpg"
+                        alt="product image" width="90%"></td>
+                <td>Some description</td>
+                <td>in stock</td>
+                <td>$7250/-</td>
+            </tr>
+            <tr>
+                <td colspan="4"><b>total amount</b></td>
+                <td><b>$13250</b></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>

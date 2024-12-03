@@ -1,0 +1,54 @@
+<!-- Task: Style the contact form (created in the HTML Forms lab) using external CSS. 
+Thefollowing should be implemented:
+• Change the background color of the form.
+• Add padding and margins to form fields.
+• Style the submit button with a hover effect.
+• Use class selectors for styling common elements and ID selectors for 
+uniqueelements -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/css task1.css">
+    
+</head>
+
+<body>
+    <fieldset>
+        <form action="./a1.php" method="post" enctype="">
+            <!-- full name  -->
+            <label for="name"> Full Name</label>
+            <input type="text" pattern="[a-zA-Z' ]+" name="name" id="name" title="only write alphabets" minlength="4"
+                placeholder="Enter Your Name" required>
+
+            <!-- email  -->
+            <label for="email"> Email</label>
+            <input type="email" name="email" id="email" minlength="4" title="must write '@' and .com"
+                placeholder="Enter your email" required>
+
+            <!-- password  -->
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" minlength="5" placeholder="Enter your password"
+                required>
+
+            <label for="confirmed">confirmed</label>
+            <input type="password" name="passw" id="passw" minlength="5" placeholder="confirmed your password" required>
+            <button>Submit</button>
+            <div class="box">
+        <p class="log">Have an Account? <a href="#">Login Here</a></p>
+                <i class="fa fa-instagram" id="i1" style="font-size: 35px;" aria-hidden="true"></i>
+                <i class="fa fa-twitter" style="font-size: 35px;color: #1DA1F2;" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" style="font-size: 35px; color: #25d366 ;" aria-hidden="true"></i>
+                <i class="fa fa-facebook" style="font-size: 35px;color:#1877F2" aria-hidden="true"></i>
+
+            </div>
+        </form>
+
+    </fieldset>
+</body>
+
+</html>

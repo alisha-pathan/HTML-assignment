@@ -1,0 +1,108 @@
+
+  <!-- • Task: Create a contact form with the following fields:
+• Full name (text input)
+• Email (email input)
+• Phone number (tel input)
+• Subject (dropdown menu)
+• Message (textarea)
+• Submit button
+Additional Requirements:
+• Use appropriate form validation using required, minlength, maxlength, and
+pattern.
+• Link form labels with their corresponding inputs using the forattribute. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="fa fa-intagram" type="image/x-icon">
+    <style>
+        *{
+            box-sizing: border-box;
+            text-transform: capitalize;
+        }
+        body{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            max-width: 580px;
+            border: 2px solid;
+            margin:auto;
+            padding: 20px; 
+            line-height:35px;
+            box-shadow: 1px 2px 5px black;
+        }
+        input:hover,select:hover,textarea:hover{
+            background-color: rgba(155, 249, 139, 0.794);
+        }
+        input:focus,select:focus,textarea:focus
+        {
+            background-color:cornsilk;
+        }
+        input,textarea,select{
+            display: block;
+            font-size: 20px;
+            padding: 6px ;
+            margin: 5px;
+            width: 100%;
+        }
+        input[type="submit"]{
+            padding: 10px;
+            margin: 10px;
+            background-color:rgb(48, 138, 32);
+        }
+    </style>
+</head>
+<body>
+  
+    <fieldset>
+        <h2 align="center">registration form</h2>
+    <form action="../a1.php" method="post" enctype="">
+        <!-- full name  -->
+        <label for="name"> Full Name</label>
+        <input type="text"
+         pattern="[a-zA-Z' ]+"
+         name="name" id="name"
+         title="only write alphabets"
+         minlength="4"
+         placeholder="Enter Your Name"
+         required
+         >
+
+         <!-- email  -->
+        <label for="email"> Email</label>
+        <input type="email" name="email" id="email" minlength="4" title="must write '@' and .com"
+        placeholder="Enter your email" required>
+
+        <!-- phone number  -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" 
+        pattern="[0-9]{10}"
+        name="phone" id="phone" title="enter 10 digit"
+        placeholder="Enter Phone Number" required>
+
+        <!-- select  -->
+        <label for="subject">subject</label>
+        <select name="subject" id="subject" required>
+            <option value="">----select----</option>
+            <option value="py">python</option>
+            <option value="mern">mern stack</option>
+            <option value="network">networking</option>
+            <option value="wd">web developement</option>
+        </select>
+
+        <!-- Message  -->
+         <label for="msg">Message</label>
+         <textarea name="msg" id="msg" cols="30" rows="8" placeholder="Enter Any Message" minlength="5" 
+            title="enter any Message" required></textarea>
+
+         <input type="submit" value="submit">
+    </form>
+</fieldset>
+</body>
+</html>
